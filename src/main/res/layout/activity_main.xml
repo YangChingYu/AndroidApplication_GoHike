@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context=".CompassActivity"
+    android:id = "@+id/background"
+    >
+
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical" tools:context=".CompassActivity"
+        >
+
+
+
+
+        <ImageView
+            android:id="@+id/main_image_hands"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="195dp"
+            android:layout_marginTop="699dp"
+            android:contentDescription="@string/compass_hands"
+            android:scaleType="fitXY"
+            android:src="@drawable/hands" />
+
+        <TextView
+        android:layout_alignParentTop="true"
+        android:id="@+id/latTextView"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        android:text="Say Allow to the location promt."
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_below="@+id/latTextView"
+        android:id="@+id/lonTextView"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        android:text="Turn on the GPS after for this"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_below="@+id/lonTextView"
+        android:id="@+id/accuracyTextView"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        android:text="高度計"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp" />
+    <!--下面這是constrain沒有影響-->
+
+    <TextView
+        android:layout_below="@+id/accuracyTextView"
+        android:id="@+id/speedTextView"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_below="@+id/speedTextView"
+        android:id="@+id/addressTextView"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="64dp"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp" />
+     <TextView
+         android:layout_below="@+id/addressTextView"
+         android:id="@+id/sotw_label"
+         android:layout_width="match_parent"
+         android:layout_height="32dp"
+         android:layout_marginStart="32dp"
+         android:layout_marginTop="12dp"
+         android:layout_marginEnd="32dp"
+         android:layout_marginBottom="12dp"/>
+        <ImageView
+            android:id="@+id/compass_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dial2" />
+        <Button
+            android:id="@+id/btn_open"
+            android:layout_below="@+id/addressTextView"
+            android:layout_marginTop="300dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Trun off the light" />
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addressTextView"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="300dp"
+            android:text="Trun on the light" />
+
+        <Button
+            android:id="@+id/btnFlashLightToggle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@+id/addressTextView"
+            android:layout_marginTop="400dp"
+            android:text="FLASHLIGHT OFF" />
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            android:layout_marginTop="600dp"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+        <Button
+            android:id="@+id/btnBlinkFlashLight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnFlashLightToggle"
+            android:layout_marginTop="100dp"
+            android:text="BLINK FLASHLIGHT" />
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/btnFlashLightToggle" />-->
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addressTextView"
+            android:layout_marginTop="350dp"
+            android:text="Setting"
+
+             />
+
+
+    </RelativeLayout>
+
+
+    </ScrollView>
+
